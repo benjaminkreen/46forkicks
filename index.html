@@ -1,0 +1,141 @@
+<html>
+<head>
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="assets/javascripts/bootstrap.js"></script>
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <script type="text/javascript" src="assets/javascripts/console.js"></script>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.css">
+</head>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <img class="img-responsive" src="/images/logo.png" height="50" width="211">
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Request A Kit</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">About</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <body>
+    <div class="container">
+      <section id="hallmark" class="grey-bg row">
+        <div class="col-xs-10 col-xs-offset-1">
+          <div class="col-xs-6">
+            <img src="/images/test-tubes.png" class="img-responsive img-round">
+          </div>
+          <div class="col-xs-6">
+            <h2>
+                Genome, meet Hallmark.
+            </h2>
+            <br>
+            <h4>
+                Make a card for any occasion that is more personal than ever before. With a sample of the recipient’s DNA, our scientists will use state-of-the-art sequencing technology to find any relevant genetic markers. With those makers in hand, you can customize any holiday, congratulatory or sympathy card beyond your wildest dreams.
+            </h4>
+          </div>
+        </div>
+      </section>
+      <br>
+      <section id="examples" class="container">
+        <div class="col-xs-6 col-xs-offset-3">
+          <div id="example-cards" class="center-block carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#example-cards" data-slide-to="0" class="active"></li>
+              <li data-target="#example-cards" data-slide-to="1"></li>
+              <li data-target="#example-cards" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="http://static.someecards.com/someecards/usercards/MjAxNC0yZDFhOWFiMzMyMjE5ZTI1.png" alt="religion">
+                <div class="carousel-caption">
+                  Christmas!
+                </div>
+              </div>
+              <div class="item">
+                <img src="http://static.someecards.com/someecards/usercards/MjAxNC04ZTM1NDk2YzVlZmM3NjI4.png" alt="disease">
+                <div class="carousel-caption">
+                  Congrats!
+                </div>
+              </div><div class="item">
+                <img src="http://static.someecards.com/someecards/usercards/MjAxNC0zYzRhNGVlMzBkMWE0MDIy.png" alt="Monogamy">
+                <div class="carousel-caption">
+                  Valentines?
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <br>
+      <section id="d3-graph" class="grey-bg container">
+        <div class="col-xs-6">
+          <h2>
+            Kilobytes? More like killa-Daltons!
+          </h2>
+          <br>
+          <h4>
+            <p>
+            We use cutting edge restriction enzymes and vegan electrophoresis medium to parse your friend’s DNA into gift card gold. Our PCR machines can pick up the faintest trace of genetic material, so all you need is a licked stamp, a cigarette butt or even just a hair! Or send us a whole pint of blood you ghoul. 
+            </p>
+            <p>
+            Behold, a d3.js powered dramatization of our sequencing process!
+            </p>
+          </h4>
+        </div>
+        <div class="col-xs-6">
+          <svg id="ep-svg" width="600" height="300">
+            <rect class="bg" width="450" height="200" x="0" y="10" rx="5" ry="5" style="stroke:black"></rect>
+          </svg>
+        </div>
+      </section>
+      <section id="unrelatives">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      </section>
+      <section id="footer" class="grey-bg container">
+        <div class="col-xs-2">
+          <h5>
+            About
+          </h5>
+        </div>
+        <div class="col-xs-2">
+          <h5>
+            Social
+          </h5>
+        </div>
+        <div class="col-xs-2">
+          <h5>
+            Legal
+          </h5>
+        </div>
+        <div class="col-xs-2">
+        </div>
+        <div class="col-xs-2">
+          <h5>
+            Site Map
+          </h5>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
