@@ -8,7 +8,7 @@ $(document).ready(function(){
 		yPos.push(j*10)
 	}
 	
-	var xPos = [100, 140]
+	var xPos = [200, 240]
 	
 	
 	var colors = ["red", "blue", "green", "yellow"]
@@ -17,6 +17,7 @@ $(document).ready(function(){
 	for(var k = 0; k < yPos.length; k++){
 		for(var l = 0; l < xPos.length; l++){
 			svg.append('rect')
+				.attr("class", "seg")
 				.attr("x", xPos[l])
 				.attr("y", yPos[k])
 				.attr("width", 30)
@@ -26,6 +27,8 @@ $(document).ready(function(){
 				.style("fill", d3.shuffle(colors)[0])
 		};
 	};
+	
+		
 	var counter = 2;
 	var yLength = yPos.length
 	
@@ -44,13 +47,13 @@ $(document).ready(function(){
 		console.log("Interval!")
 		if(counter % 2 === 0){
 			var EPy = EPyPos();
-			svg.selectAll('rect')
+			svg.selectAll('rect.seg')
 			.transition()
 			.attr("x", function(d, i){ return EPxPos[i % 4]; })
 			.attr("y", function(d, i){ return (EPy[i] % 180) + 10; })
 			counter++
 		} else {
-			svg.selectAll('rect')
+			svg.selectAll('rect.seg')
 			.transition()
 			.attr("x", function(d, i){ return xPos[i%2]; })
 			.attr("y", function(d, i){ if(i < yLength){ return yPos[i % yLength]; } else { return yPos[(i+1) % yLength]; }; })
